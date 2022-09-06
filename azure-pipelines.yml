@@ -6,11 +6,11 @@
 trigger:
 - main
 
-pool:
+pool: Default
   # vmImage: ubuntu-latest
   demands:
-  - maven  
-  - Agent.Version -equals 2.144.0 # equals check for Agent.Version 2.144.0
+  # - maven  
+  # - Agent.Version -equals 2.144.0 # equals check for Agent.Version 2.144.0
 
 steps:
 - task: Maven@3
